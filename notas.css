@@ -1,0 +1,80 @@
+/* // MVP
+// creacion de usuarios
+// login 
+// creacion de tiendas
+//     creacion de productos
+// hacer pedido 
+// pago 
+// NICE to HAVE: metemos repartidores
+//cupones
+
+
+// usuarios
+//id
+// nombre
+// apellidos
+// correo 
+// nacimiento
+// passw
+// username
+// direcciones
+// foto
+// card tocken 
+//telefono
+
+
+// tiendas
+// id
+// direccion
+// nombre
+// correo 
+// tipo*
+// telefono
+// calificacion
+// productos
+// horario
+// descripcion
+// foto tiendas
+// costo (nivel precio)
+//Productos* []
+//NICE to HAVE cadena de tiendas
+
+
+
+
+
+// tipo restaurante
+// id
+// nombre
+// descripcion 
+
+
+
+// cupones
+// id
+// cupon
+// descuento
+// descripcion
+
+
+//Productos
+//id
+// nombre
+// descripciòn 
+// precio
+// foto 
+// id tienda
+//tipo (bebida etc postre)
+
+
+//Pedido
+// id 
+// productos
+// monto $
+// cupon*
+// status pago
+//status pedido
+// dirección ususario*
+// user*
+// tienda*
+ */
