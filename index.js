@@ -5,7 +5,7 @@ import mongoose from 'mongoose';
 
 const app = express();
 const PORT = process.env.PORT || 3003
-const mongoURI = porcess.env.MONGODB_URI || "mongodb://principalnegra:cintanegr4@ds113942.mlab.com:13942/sindelantal"
+const mongoURI = process.env.MONGODB_URI || "mongodb://principalnegra:cintanegr4@ds113942.mlab.com:13942/sindelantal"
 
 
 mongoose.connect(mongoURI,{useNewUrlParser: true});
@@ -17,10 +17,11 @@ app.use(parser.json());
 app.use(cors());
 
 app.get('/', (req,res)=>{
-    res.send('Server on')
+    res.send('Server on sindelantal')
 });
 
 app.listen(PORT,()=>{
     console.log("server on" + PORT)
 })
 
+// app.listen(3003, ()=> console.log('server on 3003'));
