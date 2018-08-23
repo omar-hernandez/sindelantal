@@ -1,13 +1,13 @@
 import mongoose from 'mongoose'
-import bcrypt from 'bcrypt'
+
 const Schema = mongoose.Schema
 
-const TiendaSchema = new Schema ({
+const TiendasSchema = new Schema ({
     "nombre":{
         type:String,
         required:true
         },
-    "dirección":{
+    "direccion":{
         type:String,
         required:true
     },
@@ -29,12 +29,12 @@ const TiendaSchema = new Schema ({
             'comentario':String,
             "estrellas":Number
         }],
-        required:true
+        // required:true
     },
     "productos":[{
         type:Schema.Types.ObjectId,
         ref:'Productos',
-        required:true
+        // required:true
     }],
     "horario":{
         type:String,
@@ -55,4 +55,4 @@ const TiendaSchema = new Schema ({
 },{collection:"Tiendas",timestamps:true});
 
 
-export default mongoose.model('Tiendas',TiendaSchema)
+export default mongoose.model('Tiendas',TiendasSchema)

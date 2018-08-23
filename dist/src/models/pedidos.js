@@ -8,10 +8,6 @@ var _mongoose = require('mongoose');
 
 var _mongoose2 = _interopRequireDefault(_mongoose);
 
-var _bcrypt = require('bcrypt');
-
-var _bcrypt2 = _interopRequireDefault(_bcrypt);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Schema = _mongoose2.default.Schema;
@@ -40,7 +36,7 @@ var PedidosSchema = new Schema({
         type: Number,
         required: true
     },
-    "direccion_usuario": {
+    "direcciones": {
         type: Schema.Types.ObjectId,
         ref: 'Users',
         required: true

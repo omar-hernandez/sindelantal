@@ -1,27 +1,23 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _mongoose = require('mongoose');
+var _mongoose = require("mongoose");
 
 var _mongoose2 = _interopRequireDefault(_mongoose);
-
-var _bcrypt = require('bcrypt');
-
-var _bcrypt2 = _interopRequireDefault(_bcrypt);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Schema = _mongoose2.default.Schema;
 
-var TiendaSchema = new Schema({
+var TiendasSchema = new Schema({
     "nombre": {
         type: String,
         required: true
     },
-    "dirección": {
+    "direccion": {
         type: String,
         required: true
     },
@@ -42,13 +38,13 @@ var TiendaSchema = new Schema({
         type: [{
             'comentario': String,
             "estrellas": Number
-        }],
-        required: true
+        }]
+        // required:true
     },
     "productos": [{
         type: Schema.Types.ObjectId,
-        ref: 'Productos',
-        required: true
+        ref: 'Productos'
+        // required:true
     }],
     "horario": {
         type: String,
@@ -68,4 +64,4 @@ var TiendaSchema = new Schema({
     }
 }, { collection: "Tiendas", timestamps: true });
 
-exports.default = _mongoose2.default.model('Tiendas', TiendaSchema);
+exports.default = _mongoose2.default.model('Tiendas', TiendasSchema);

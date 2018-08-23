@@ -1,0 +1,17 @@
+version: "2"
+services:
+  app:
+    restart: always
+    build: .
+    ports:
+      - "3000:3002"
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    volumes:
+      - data-volumes:/data/db
+    ports:
+      - "27017:27017"
+volumes:
+    data-volumes:

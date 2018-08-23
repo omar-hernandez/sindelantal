@@ -1,5 +1,4 @@
 import mongoose from 'mongoose'
-import bcrypt from 'bcrypt'
 const Schema = mongoose.Schema
 
 const PedidosSchema = new Schema ({
@@ -26,7 +25,7 @@ const PedidosSchema = new Schema ({
         type:Number,
         required:true
     },
-    "direccion_usuario":{
+    "direcciones":{
         type:Schema.Types.ObjectId,
         ref:'Users',
         required:true
