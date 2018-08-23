@@ -34,15 +34,13 @@ const UserSchema = new Schema ({
     },
     "user_pay":{
         type:String,
-        required:true
     },
     "telefono":{
         type:Number,
-        required:true
         },
     "direcciones":[{
         type:String,
-        required:true
+
     }],
 },{collection:"Users",timestamps:true});
 
