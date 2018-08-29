@@ -47,16 +47,14 @@ var UserSchema = new Schema({
         default: "https://articles-images.sftcdn.net/wp-content/uploads/sites/3/2016/01/wallpaper-for-facebook-profile-photo.jpg"
     },
     "user_pay": {
-        type: String,
-        required: true
+        type: String
     },
     "telefono": {
-        type: Number,
-        required: true
+        type: Number
     },
     "direcciones": [{
-        type: String,
-        required: true
+        type: String
+
     }]
 }, { collection: "Users", timestamps: true });
 
