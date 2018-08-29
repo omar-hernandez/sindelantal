@@ -9,11 +9,11 @@ const TiendasSchema = new Schema ({
         },
     "direccion":{
         type:String,
-        required:true
+        // required:true
     },
     "correo":{
         type:String,
-        required:true
+        // required:true
     },
     "tipo":{
         type:Schema.Types.ObjectId,
@@ -38,7 +38,7 @@ const TiendasSchema = new Schema ({
     }],
     "horario":{
         type:String,
-        required:true,
+        // required:true,
         },
     "descripcion":{
         type:String,
