@@ -18,12 +18,12 @@ var TiendasSchema = new Schema({
         required: true
     },
     "direccion": {
-        type: String,
-        required: true
+        type: String
+        // required:true
     },
     "correo": {
-        type: String,
-        required: true
+        type: String
+        // required:true
     },
     "tipo": {
         type: Schema.Types.ObjectId,
@@ -47,8 +47,8 @@ var TiendasSchema = new Schema({
         // required:true
     }],
     "horario": {
-        type: String,
-        required: true
+        type: String
+        // required:true,
     },
     "descripcion": {
         type: String,
