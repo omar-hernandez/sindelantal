@@ -35,7 +35,7 @@ export const ProductoType = new GraphQLObjectType({
             }
         },
         fotos_producto:{
-            type:GraphQLString
+            type: new GraphQLList(GraphQLString)
         },
         tipo_producto:{
             type:GraphQLString
@@ -60,7 +60,7 @@ export const ProductoInputType = new GraphQLInputObjectType({
             type: new GraphQLList(GraphQLID),
         },
         fotos_producto:{
-            type:GraphQLString
+            type: new GraphQLList(GraphQLString)
         },
         tipo_producto:{
             type:GraphQLString
