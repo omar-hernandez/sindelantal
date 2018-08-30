@@ -41,7 +41,7 @@ var ProductoType = exports.ProductoType = new _graphql.GraphQLObjectType({
                 }
             },
             fotos_producto: {
-                type: _graphql.GraphQLString
+                type: new _graphql.GraphQLList(_graphql.GraphQLString)
             },
             tipo_producto: {
                 type: _graphql.GraphQLString
@@ -68,7 +68,7 @@ var ProductoInputType = exports.ProductoInputType = new _graphql.GraphQLInputObj
                 type: new _graphql.GraphQLList(_graphql.GraphQLID)
             },
             fotos_producto: {
-                type: _graphql.GraphQLString
+                type: new _graphql.GraphQLList(_graphql.GraphQLString)
             },
             tipo_producto: {
                 type: _graphql.GraphQLString
